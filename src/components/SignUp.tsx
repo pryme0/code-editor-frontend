@@ -55,7 +55,7 @@ export const SignUp = () => {
   return (
     <SignupContainer>
       <ContentContainer>
-        <h2>Signup</h2>
+        <h2>Sign Up</h2>
         <AuthForm onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <InputField

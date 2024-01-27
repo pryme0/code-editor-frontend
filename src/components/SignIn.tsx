@@ -50,7 +50,7 @@ export const SignIn = () => {
   return (
     <SigninContainer>
       <ContentContainer>
-        <h2>Signin</h2>
+        <h2>Sign In</h2>
         <AuthForm onSubmit={handleSubmit}>
           <label htmlFor="email">Email:</label>
           <InputField
@@ -142,6 +142,7 @@ export const SubText = styled.div`
   margin-top: 20px;
   display: flex;
   span {
+    margin-left: 10px;
     color: #87c;
     cursor: pointer;
   }
