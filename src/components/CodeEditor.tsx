@@ -122,7 +122,7 @@ export const CodeEditor = () => {
       console.error("Error adding tab:", error);
     }
   };
-  const closeTab = (tabId: any) => {
+  const closeTab = (tabId: number) => {
     const currentFolder = folders[activeFolder];
     setFolders((prevFolders) => {
       const updatedFolders = prevFolders.map((folder) => {
@@ -138,7 +138,7 @@ export const CodeEditor = () => {
     });
   };
 
-  const changeTab = (tabId: any) => {
+  const changeTab = (tabId: number) => {
     setActiveTab(tabId);
   };
 
@@ -333,7 +333,7 @@ export const CodeEditor = () => {
                   defaultValue={tab.content}
                   onMount={handleEditorDidMount}
                   options={options}
-                  onChange={(value: any, event: any) => {
+                  onChange={(value: any) => {
                     handleEditorChange(tab.id, value);
                   }}
                 />
